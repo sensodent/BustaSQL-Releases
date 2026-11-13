@@ -1,0 +1,26 @@
+BustaSQL — Distribution and License Notice
+==========================================
+
+This repository distributes official installer binaries, update files and
+public documentation. It does not contain the BustaSQL source code.
+Publishing release binaries here does not grant an open-source license to the
+BustaSQL application code or its branding.
+
+BustaSQL is currently available to download without charge. Rights in
+BustaSQL-specific components and branding are reserved by their respective
+holders unless individual files or accompanying notices state otherwise.
+
+THIRD-PARTY COMPONENTS
+
+BustaSQL includes third-party open-source components, among them Electron,
+the Monaco editor, React and database drivers, each distributed under its own
+license. Those license terms continue to apply to their respective components.
+Review the license notices included with the application distribution.
+
+This notice does not relicense third-party components, override their
+licenses, or assert that every component of the installer is proprietary. It
+is not an open-source license for the BustaSQL application.
+
+BustaSQL is an independent project and is not affiliated with Microsoft,
+Oracle, the PostgreSQL Global Development Group, MariaDB, Anthropic, OpenAI,
+Cursor or other products mentioned in the documentation.

@@ -1,0 +1,93 @@
+name: "Bug report"
+description: "Report a reproducible BustaSQL problem"
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Search existing issues first. Remove server names, connection strings, credentials, real data and private schema details. Vulnerabilities must follow SECURITY.md.
+  - type: input
+    id: version
+    attributes:
+      label: "BustaSQL version"
+      placeholder: "0.5.5"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: "Windows version"
+      placeholder: "Windows 11 (x64)"
+    validations:
+      required: true
+  - type: dropdown
+    id: engine
+    attributes:
+      label: "Database engine"
+      options:
+        - "SQL Server (on-premises / LocalDB)"
+        - "Azure SQL Database"
+        - "MySQL / MariaDB"
+        - "PostgreSQL"
+        - "Not database-specific"
+    validations:
+      required: true
+  - type: input
+    id: engine_version
+    attributes:
+      label: "Engine version (optional)"
+      placeholder: "SQL Server 2019, PostgreSQL 16, MySQL 8.4…"
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Affected area"
+      options:
+        - "Connections / authentication / SSH"
+        - "Object explorer"
+        - "Query editor / IntelliSense"
+        - "Query execution / multiple databases"
+        - "Results grid / export"
+        - "Direct editing"
+        - "Schema Compare"
+        - "Data Compare"
+        - "Execution plans"
+        - "Table designer"
+        - "AI assistant (Claude Code / Codex / Cursor)"
+        - "Installer / updates / tray"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce"
+      description: "If possible, include a minimal script (CREATE TABLE + sample rows) instead of real data."
+      placeholder: "1. Connect to ...\n2. Run ...\n3. Observe ..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected behavior"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual behavior"
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Screenshots or sanitized logs (optional)"
+      description: "Logs are in the tray menu → Open logs folder. Do not include passwords, tokens, connection strings or real data."
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Before submitting"
+      options:
+        - label: "I searched for an existing report."
+          required: true
+        - label: "I removed private or sensitive information."
+          required: true

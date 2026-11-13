@@ -1,0 +1,30 @@
+name: "Question / Help"
+description: "Ask a usage or installation question"
+title: "[Question]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Check the README, FAQ and SUPPORT.md first. Do not include passwords, tokens, connection strings, real data or private schema details."
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Topic"
+      options:
+        - "Installation / updates"
+        - "Connecting (VPN, Azure, Entra ID, SSH)"
+        - "Queries / results"
+        - "Schema / Data Compare"
+        - "AI assistant setup"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: "What do you need help with?"
+    validations:
+      required: true
+  - type: textarea
+    id: attempted
+    attributes:
+      label: "What have you tried? (optional)"
